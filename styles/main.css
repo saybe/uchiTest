@@ -141,8 +141,10 @@
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   margin-left: 5px;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
   color: #70c5e2;
 }
 
@@ -159,8 +161,10 @@
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   margin-left: 5px;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
   color: #70c5e2;
 }
 
@@ -180,8 +184,8 @@
 }
 
 .hint_text {
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
   padding: 10px;
   border-radius: 10px;
   text-align: center;
@@ -205,8 +209,10 @@
   padding: 5px 10px;
   border-radius: 5px;
   background-color: #b9e0ed;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 
 .ready button:hover {
