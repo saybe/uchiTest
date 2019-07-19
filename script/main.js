@@ -42,6 +42,9 @@ function check() {
     else {
         optionOne.style.color = 'red';
         button.style.backgroundColor = '#f05a69';
+        setTimeout(() => {
+            button.style.backgroundColor = '#70c5e2'
+        },1000)
     }
 }
 
